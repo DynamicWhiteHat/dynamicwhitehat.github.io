@@ -23,21 +23,65 @@
         </nav>
         <a href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener"><button><img  src="Images//website/github.png" alt="github logo"></button></a>
     </header>
-    
-    <section id = "about">
-        
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">DynamicWhiteHat</h1>
+            <p class="hero-subtitle">Developer • Photographer</p>
+        </div>
+    </section>
+    <hr style="height: 5px; background-color: white; border: none;">
+    <section id="about">        
         <div class="container">
-            <div class="wave-container"><h1><span class="wave">👋</span> Hey There!</h1></div>
+            <h1><span class="wave">👋</span> Hey There!</h1>
             <p>I'm <strong class="name">Aahil Syed</strong>, aka <strong class="name">DynamicWhiteHat</strong>. I'm a sophomore at <a href="https://en.wikipedia.org/wiki/Maggie_L._Walker_Governor%27s_School_for_Government_and_International_Studies" target= "_blank" rel ="noopener">MLWGS</a>. As an amateur coder, I love learning new languages and <a href="https://github.com/DynamicWhiteHat?tab=repositories" target="_blank" rel="noopener">applying</a> them! </p>
             <p>I also love capturing  <a href="pictures.html">photos</a> whenever I get the chance!</p>
-            <p>Take a look at some of my projects below or visit my <a  href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener">Github (<span class="highlight">&nbsp;@DynamicWhiteHat&nbsp;</span>)</a>!</p>
+            <p>Take a look at some of my projects below or visit my <a  href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener">Github (<span class="highlight">&nbsp;@DynamicWhiteHat&nbsp;</span>)</a> to see them all!</p>
         </div>
     
     </section>
     <section id="projects">
-        <div class="container"></div>
-            <h1 class="text">Projects</h1>
-            <p class="text">Languages: Python, HTML + CSS, JS, Java, C#, C++, Swift</p>
+        <div class="container">
+            <h1><span style="font-size: 50px;">📝</span> Projects</h1>
+            <p>Languages: Python, HTML + CSS, JS, Java, C#, C++, Swift</p>
+            <p>Below are a few of my recent projects, take a look!</p>
+            <div class="project">
+                <div class="project-container">
+                    <img src="Images/website/pysolar.png" alt="pysolar image" style="width: 250px; height: auto; border-radius: 50px; border: 5px solid rgba(255, 255, 255, 0.311); object-fit: cover;">
+                    <div class="project_side-container">
+                        <h3>PySolar</h3>    
+                        <ul>
+                            <li class="list">A simple real-time solar system viewer written 100% in Python</li>
+                            <li class="list">Uses the Skyfield library to pull data from JPL's Development Ephemeris series de440s.bsp file, which includes data from 1849 to 2150</li>
+                            <li class="list">Displays the system in a scrollable matplotlib window</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="project1">
+                <div class="project-container">
+                    <div class="project_side-container">
+                        <h3>Styne</h3>    
+                        <ul>
+                            <li class="list">Voice assistant for Windows, with both online and locally available AI features.</li>
+                            <li class="list">Uses natural language processing to create versatile and responsive voice commands</li>
+                            <li class="list">Work in progress</li>
+                        </ul>
+                    </div>
+                    <img src="Images/website/styne.png" alt="styne image" style="width: 250px; height: auto; border-radius: 50px; border: 5px solid rgba(255, 255, 255, 0.311); object-fit: cover; object-position: left;">
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-container">
+                    <img src="Images/website/discord.png" alt="discord bot image" style="width: 250px; height: auto; border-radius: 50px; border: 5px solid rgba(255, 255, 255, 0.311); object-fit: cover; object-position: left;">
+                    <div class="project_side-container">
+                        <h3>Discord Streaks</h3>    
+                        <ul>
+                            <li class="list">Discord bot written in Python for keeping streaks</li>
+                            <li class="list">Uses sqlite3 library to securely store information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
         
     </section>

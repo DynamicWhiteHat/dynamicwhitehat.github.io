@@ -25,66 +25,34 @@
     </header>
     
 
-<div class="pictures" id="pictureContainer">
-    <!-- Images will be loaded here dynamically -->
+    <div class="row">
+        <div class="column">
+            <img src="Images/pictures/IMG_7064.jpg" alt="Butterfly" class="picture">
+            <img src="Images/pictures/IMG_7057.jpg" alt="Butterfly" class="picture">
+            <img src="Images/pictures/FullSizeRender (1).jpg" alt="Water" class="picture">
+            <img src="Images/pictures/IMG_8684.jpg" alt="Bird" class="picture">
+        </div>
+        
+        <div class="column">
+            <img src="Images/pictures/IMG_1395.jpg" alt="Horse" class="picture">
+            <img src="Images/pictures/FullSizeRender.jpg" alt="Building" class="picture">
+            <img src="Images/pictures/1.jpeg" alt="Mosque" class="picture">
+            <img src="Images/pictures/2.jpeg" alt="Land" class="picture">
+            <img src="Images/pictures/IMG_1294.jpg" alt="Chandelier" class="picture">
+
+        </div>
+        
+        <div class="column">
+            <img src="Images/pictures/3.jpeg" alt="Mosque" class="picture">
+            <img src="Images/pictures/4.jpeg" alt="Cat" class="picture">
+            <img src="Images/pictures/IMG_6949.jpg" alt="Water" class="picture">
+
+            <img src="Images/pictures/IMG_1408.jpg" alt="Mosque" class="picture">
+        </div>
+    </div>
+    
 </div>
 
-<script>
-const images = [
-    {
-        path: "Images/pictures/IMG_7064.jpg",
-        alt: "Butterfly"
-    },
-    {
-        path: "Images/pictures/IMG_7057.jpg",
-        alt: "Butterfly"
-    },
-    {
-        path: "Images/pictures/FullSizeRender (1).jpg",
-        alt: "Water"
-    },
-    {
-        path: "Images/pictures/IMG_6949.jpg",
-        alt: "Water"
-    },      
-    
-    {
-        path: "Images/pictures/IMG_1395.jpg",
-        alt: "Horse"
-    },
-    
-    {
-        path: "Images/pictures/FullSizeRender.jpg",
-        alt: "Building"
-    },
-    {
-        path: "Images/pictures/IMG_1408.jpg",
-        alt: "Mosque"
-    },
-    {
-        path: "Images/pictures/IMG_8684.jpg",
-        alt: "Bird"
-    },
-    
-    {
-        path: "Images/pictures/IMG_1294.jpg",
-        alt: "Chandelier"
-    }
-];
-
-function loadImages() {
-    const container = document.getElementById('pictureContainer');
-    images.forEach(image => {
-        const img = document.createElement('img');
-        img.src = image.path;
-        img.alt = image.alt;
-        img.className = 'picture';
-        container.appendChild(img);
-    });
-}
-
-document.addEventListener('DOMContentLoaded', loadImages);
-</script>
 
 </body>
 </html>
