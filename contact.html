@@ -10,18 +10,25 @@
 <body>
     <header>
         <div class="logo-container">
-        <img class = "logo" src="Images//website/IMG-1970.png" alt="logo">
-        <span class="logo-text" data-text="DynamicWhiteHat">DynamicWhiteHat</span>
+            <img class="logo" src="Images/website/IMG-1970.png" alt="logo">
+            <span class="logo-text" data-text="DynamicWhiteHat">DynamicWhiteHat</span>
         </div>
         <nav>
-            <ul class="nav_links">
-                <li><a href="index.html#about">~/about me</a></li>
-                <li><a href="index.html#projects">~/projects</a></li>
-                <li><a href="pictures.html">~/pictures</a></li>
-                <li><a href="contact.html">~/contact</a></li>
+            <ul class="nav_bar">
+                <input type="checkbox" id="check">
+                <span class="menu">
+                    <li><a href="index.html#about">~/about me</a></li>
+                    <li><a href="index.html#projects">~/projects</a></li>
+                    <li><a href="pictures.html">~/pictures</a></li>
+                    <li><a href="contact.html">~/contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
             </ul>
         </nav>
-        <a href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener"><button><img src="Images//website/github.png" alt="github logo"></button></a>
+        <a href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener" class="logoImage">
+            <button><img src="Images/website/github.png" alt="github logo"></button>
+        </a>
     </header>
     <section class="contact-section">
         <div class="contact-container">
