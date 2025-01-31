@@ -99,37 +99,35 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.5rem; /* Changed from 30px 10% to rem */
+    padding: 0.5rem 0.5rem; 
     background-color: rgba(0, 0, 0, 0.6);
     position: sticky;
     top: 0;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.4); /* Changed from 2px to rem */
-}
+    box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.4); 
 
 
 .menu {
     display: flex;
     list-style: none;
-    margin-right: 9.375rem; /* Changed from 150px to 9.375rem */
+    margin-right: 9.375rem; 
 }
 
 .menu li {
     display: inline-block;
-    padding: 0 1.25rem; /* Changed from 0px 20px to rem */
-}
+    padding: 0 1.25rem; }
 
 .menu li a {
     position: relative;
-    padding-bottom: 0.3125rem; /* Changed from 5px to rem */
+    padding-bottom: 0.3125rem;
 }
 
 .menu li a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 0.125rem; /* Changed from 2px to rem */
+    height: 0.125rem;
     bottom: 0;
     left: 0;
     background-color: rgb(93, 218, 71);
@@ -505,4 +503,5 @@ button:hover img {
         width: 100%;
         border-right: 0.1875rem solid rgba(255, 255, 255, 0); /* Changed from 3px to rem */
     }
+}
 }
