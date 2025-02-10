@@ -5,7 +5,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0px;
 }
 
 html {
@@ -20,7 +20,7 @@ body {
 h1 {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    font-size: 1.875rem; /* Changed from 30px to 1.875rem */
+    font-size: 30px;
     color: white;
     justify-content: flex-start;
 }
@@ -28,27 +28,27 @@ h1 {
 h3 {
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    font-size: 1.375rem; /* Changed from 22px to 1.375rem */
+    font-size: 22px;
     color: white;
     justify-content: flex-start;
     text-decoration: wavy underline rgb(93, 218, 71);
-    padding-bottom: 0.625rem; /* Changed from 10px to 0.625rem */
+    padding-bottom: 10px;
 }
 
 p {
     font-family: "Roboto", sans-serif;
-    font-size: 1.25rem; /* Changed from 20px to 1.25rem */
+    font-size: 20px;
     font-weight: 400;
     color: white;
     justify-content: flex-start;
-    padding-left: 5rem; /* Changed from 80px to 5rem */
+    padding-left: 80px;
     line-height: 1.8;
 }
 
 li, a, button {
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    font-size: 1rem; /* Changed from 16px to 1rem */
+    font-size: 16px;
     color: #ecf0f1;
     text-decoration: none;
 }
@@ -69,28 +69,30 @@ li, a, button {
 
 /* Layout & Structure */
 section {
-    padding: 3.125rem 0.625rem 0.3125rem 0.625rem; /* Changed from 50px 10% 5px 10% to rem */
+    padding: 50px 10% 5px 10%;
 }
 
+
+
 #about {
-    scroll-margin-top: 1.875rem; /* Changed from 30px to 1.875rem */
+    scroll-margin-top: 30px;
 }
 #projects {
-    scroll-margin-top: 1.875rem; /* Changed from 30px to 1.875rem */
+    scroll-margin-top: 30px;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 1em;
-    max-width: 56.25rem; /* Changed from 900px to 56.25rem */
+    max-width: 900px;
     margin: 0 auto;
     text-align: left;
     height: fit-content;
 }
 
 .text {
-    padding-left: 0.75rem; /* Changed from 12rem to 0.75rem */
+    padding-left:12rem;
 }
 
 /* Header & Navigation */
@@ -99,98 +101,44 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.5rem; 
+    padding: 30px, 10%;
     background-color: rgba(0, 0, 0, 0.6);
     position: sticky;
     top: 0;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    box-shadow: 0.125rem 0.125rem 1.25rem rgba(0, 0, 0, 0.4); 
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.4);
+}
 
-
-.menu {
-    display: flex;
+.nav_links {
     list-style: none;
-    margin-right: 9.375rem; 
+    margin-right: 150px;
 }
 
-.menu li {
+.nav_links li {
     display: inline-block;
-    padding: 0 1.25rem; }
-
-.menu li a {
-    position: relative;
-    padding-bottom: 0.3125rem;
+    padding: 0px 20px;
+    font-family: "Roboto", sans-serif;
 }
 
-.menu li a::after {
+.nav_links li a {
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.nav_links li a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 0.125rem;
+    height: 2px;
     bottom: 0;
     left: 0;
     background-color: rgb(93, 218, 71);
     transition: width 0.3s ease;
 }
 
-.menu li a:hover::after {
+.nav_links li a:hover::after {
     width: 100%;
-}
-
-.open-menu, .close-menu {
-    position: absolute;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: none;
-    font-size: 1.5rem;
-
-}
-
-.open-menu {
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
-}
-
-.close-menu {
-    top: 30px;
-    right: 20px;
-}
-
-#check {
-    display: none;
-}
-@media (max-width: 1050px) {
-    html, body{
-    overflow-x: hidden;}
-    .menu {
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-        width: 40%;
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10100;
-        margin-right: 0;
-        background-color: #0c0c0c;
-        transition: all 0.5s ease-in-out;
-    }
-    .logoImage {display:none;}
-    .menu li {
-        margin-top: 8rem;
-    }
-    .menu li a {
-        padding: 5px;
-    }
-    .open-menu, .close-menu {
-        display: block;
-    }
-    #check:checked ~ .menu {
-        right:0;
-    }
 }
 
 /* hero settings */
@@ -249,7 +197,7 @@ header {
 .hero-subtitle {
     font-size: 1.5rem;
     opacity: 0.9;
-    padding: 3.125rem; /* Changed from 50px to 3.125rem */
+    padding: 50px;
 }
 
 /* Components */
@@ -257,61 +205,61 @@ header {
     background: linear-gradient(135deg, rgba(93, 218, 71, 0.1), rgba(93, 218, 71, 0.2));
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 0.0625rem solid rgba(93, 218, 71, 0.2); /* Changed from 1px to rem */
-    box-shadow: 0 0.5rem 2rem 0 rgba(93, 218, 71, 0.1); /* Changed from 8px to rem */
-    border-radius: 0.625rem; /* Changed from 10px to rem */
+    border: 1px solid rgba(93, 218, 71, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(93, 218, 71, 0.1);
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
-    margin-left: 5rem; /* Changed from 80px to 5rem */
-    margin-bottom: 0.625rem; /* Changed from 10px to rem */
+    margin-left: 80px;
+    margin-bottom: 10px;
 }
 
 .project1 {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 0.0625rem solid rgba(255, 255, 255, 0.1); /* Changed from 1px to rem */
-    box-shadow: 0 0.5rem 2rem 0 rgba(255, 255, 255, 0.1); /* Changed from 8px to rem */
-    border-radius: 0.625rem; /* Changed from 10px to rem */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
-    margin-left: 5rem; /* Changed from 80px to 5rem */
-    margin-bottom: 0.625rem; /* Changed from 10px to rem */
+    margin-left: 80px;
+    margin-bottom: 10px;
 }
 
 .project:hover, .project1:hover {
-    transform: translateY(-0.3125rem); /* Changed from -5px to rem */
-    box-shadow: 0 0.75rem 2.5rem 0 rgba(93, 218, 71, 0.15); /* Changed from 12px to rem */
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(93, 218, 71, 0.15);
 }
 .project-container {
     display: flex;
     justify-content: start;
-    padding: 1.5625rem; /* Changed from 25px to rem */
-    gap: 3.125rem; /* Changed from 50px to rem */
+    padding: 25px;
+    gap: 50px;
 }
 
 .project_side-container {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 0.625rem; /* Changed from 10px to rem */
+    padding: 10px;
 }
 
 .row {
     display: flex;
-    padding: 1.25rem 6.25rem 6.25rem 6.25rem; /* Changed from 20px 100px 100px 100px to rem */
-    gap: 1.25rem; /* Changed from 20px to rem */
+    padding: 20px 100px 100px 100px;
+    gap: 20px; 
 }
 
 .column {
     flex: 1; 
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; /* Changed from 20px to rem */
+    gap: 20px; 
 }
 
 .column img {
     width: 100%; 
     height: auto;
-    border-radius: 0.3125rem; /* Changed from 5px to rem */
+    border-radius: 5px;
     transition: transform 0.3s ease; 
 }
 
@@ -320,10 +268,10 @@ header {
 }
 .logo {
     align-self: center;
-    width: 5rem; /* Changed from 80px to 5rem */
+    width: 80px;
     height: auto;
     object-fit: contain;
-    padding: 0.9375rem; /* Changed from 15px to rem */
+    padding: 15px;
 }
 
 button {
@@ -338,7 +286,7 @@ button {
 }
 
 button img {
-    width: 4.375rem; /* Changed from 70px to 4.375rem */
+    width: 70px;
     height: auto;
     object-fit: contain;
     transition: all 0.3s ease 0s;
@@ -351,14 +299,14 @@ button:hover img {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 0.3125rem; /* Changed from 5px to rem */
+    gap: 5px;
 }
 
 .logo-text {
     color: #1c1c1c;
     font-family: "Montserrat", sans-serif;
     font-weight: 800;
-    font-size: 1.25rem; /* Changed from 20px to 1.25rem */
+    font-size: 20px;
     position: relative;
 }
 
@@ -369,12 +317,12 @@ button:hover img {
 
 .highlight {
     background-color: rgba(93, 218, 71, 0.3);
-    border-radius: 0.3125rem; /* Changed from 5px to rem */
+    border-radius: 5px;
 }
 
 .container a {
     font-family: "Roboto", sans-serif;
-    font-size: 1.25rem; /* Changed from 20px to 1.25rem */
+    font-size: 20px;
     color: white;
     transition: all 0.3s ease 0s;
 }
@@ -386,55 +334,56 @@ button:hover img {
 /* contact page */
 
 .contact-section {
-    padding: 2.5rem 1.25rem; /* Changed from 4rem 2rem to rem */
+    padding: 4rem 2rem;
 }
 
 .contact-container {
-    max-width: 75rem; /* Changed from 1200px to 75rem */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .contact-title {
     text-align: center;
-    margin-bottom: 1.875rem; /* Changed from 3rem to rem */
+    margin-bottom: 3rem;
     font-size: 2.5rem;
     color: rgb(93, 218, 71);
 }
 
 .contact-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* Changed from 250px to rem */
-    gap: 1.25rem; /* Changed from 2rem to rem */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
     justify-items: center;
 }
 
 .contact-card {
     background: rgba(255, 255, 255, 0.1);
-    padding: 1.25rem; /* Changed from 2rem to rem */
-    border-radius: 0.625rem; /* Changed from 10px to rem */
+    padding: 2rem;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s ease;
     width: 100%;
-    max-width: 18.75rem; /* Changed from 300px to rem */
+    max-width: 300px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 0.0625rem solid rgba(255, 255, 255, 0.18); /* Changed from 1px to rem */
-    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.37); /* Changed from 8px to rem */
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+
 }
 
 .contact-card:hover {
-    transform: translateY(-0.3125rem); /* Changed from -5px to rem */
+    transform: translateY(-5px);
 }
 
 .contact-card img {
-    width: 3.125rem; /* Changed from 50px to 3.125rem */
-    height: 3.125rem; /* Changed from 50px to 3.125rem */
-    margin-bottom: 0.625rem; /* Changed from 1rem to rem */
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
 }
 
 .contact-card h3 {
     color: rgb(93, 218, 71);
-    margin-bottom: 0.3125rem; /* Changed from 0.5rem to rem */
+    margin-bottom: 0.5rem;
 }
 
 .contact-card a, .contact-card span {
@@ -447,7 +396,7 @@ button:hover img {
     color: rgb(93, 218, 71);
 }
 
-@media (max-width: 48rem) { /* Changed from 768px to rem */
+@media (max-width: 768px) {
     .contact-cards {
         grid-template-columns: 1fr;
     }
@@ -458,7 +407,7 @@ button:hover img {
 
 /* Animations */
 .wave {
-    font-size: 3.125rem; /* Changed from 50px to rem */
+    font-size: 50px;
     display: inline-block;
     animation: wave 5s ease-in-out infinite;
     transform-origin: 70% 80%;
@@ -469,7 +418,7 @@ button:hover img {
     content: attr(data-text);
     position: absolute;
     color: white;
-    width: 6.25rem; /* Changed from 100px to rem */
+    width: 100px;
     overflow: hidden;
     white-space: nowrap;
     animation: animate 1.5s ease-in-out forwards;
@@ -491,7 +440,7 @@ button:hover img {
 @keyframes animate {
     0% {
         width: 0;
-        border-right: 0.1875rem solid rgba(255, 255, 255, 1); /* Changed from 3px to rem */
+        border-right: 3px solid rgba(255, 255, 255, 1);
     }
     50% {
         width: 100%;
@@ -501,7 +450,6 @@ button:hover img {
     }
     100% {
         width: 100%;
-        border-right: 0.1875rem solid rgba(255, 255, 255, 0); /* Changed from 3px to rem */
+        border-right: 3px solid rgba(255, 255, 255, 0);
     }
-}
 }
