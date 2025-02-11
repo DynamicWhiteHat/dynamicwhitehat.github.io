@@ -202,11 +202,11 @@ header {
 
 /* Components */
 .project {
-    background: linear-gradient(135deg, rgba(93, 218, 71, 0.1), rgba(93, 218, 71, 0.2));
+    background: linear-gradient(135deg, rgba(61, 145, 64, 0.1), rgba(61, 145, 64, 0.2));
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(93, 218, 71, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(93, 218, 71, 0.1);
+    border: 1px solid rgba(61, 145, 64, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(61, 145, 64, 0.1);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
     margin-left: 80px;
@@ -227,7 +227,7 @@ header {
 
 .project:hover, .project1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 12px 40px 0 rgba(93, 218, 71, 0.15);
+    box-shadow: 0 12px 40px 0 rgba(61, 145, 64, 0.15);
 }
 .project-container {
     display: flex;
@@ -328,7 +328,7 @@ button:hover img {
 }
 
 .container a:hover {
-    color: rgb(93, 218, 71);
+    color: rgb(64, 145, 64);
 }
 
 /* contact page */
@@ -393,7 +393,7 @@ button:hover img {
 }
 
 .contact-card a:hover {
-    color: rgb(93, 218, 71);
+    color: rgb(61, 145, 64);
 }
 
 @media (max-width: 768px) {
