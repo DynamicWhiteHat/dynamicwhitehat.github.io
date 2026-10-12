@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - DynamicWhiteHat</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" type="image/x-icon" href="Images/website/favicon-16x16.png">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+        <img class = "logo" src="Images//website/IMG-1970.png" alt="logo">
+        <span class="logo-text" data-text="DynamicWhiteHat">DynamicWhiteHat</span>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html#about">~/about me</a></li>
+                <li><a href="projects.html">~/projects</a></li>
+                <li><a href="pictures.html">~/pictures</a></li>
+                <li><a href="contact.html">~/contact</a></li>
+            </ul>
+        </nav>
+        <a href="https://github.com/DynamicWhiteHat/" target="_blank" rel="noopener"><button><img src="Images//website/github.png" alt="github logo"></button></a>
+    </header>
+
+    <section class="projects-page">
+        <div class="projects-wrap">
+            <h1 class="projects-title">Projects</h1>
+            <p class="projects-intro">Custom boards, enclosures, and firmware. Click a card to see the full write-up, schematics, and CAD on GitHub, where everything I create is open source.</p>
+            <p class="projects-langs">Languages: Python, HTML + CSS, JS, Java, C#, C++, Swift</p>
+
+            <h2 class="group-heading">Hardware</h2>
+            <div class="card-grid">
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Rebound" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/Rebound.jpg" alt="Rebound image" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Rebound</h3>
+                        <p class="card-tagline">A fully custom surface electromyography (sEMG) interface.</p>
+                        <ul class="card-features">
+                            <li>Low-cost alternative to current technology for detecting silent aspirations</li>
+                            <li>Uses machine learning for improved accuracy</li>
+                        </ul>
+                        <div class="tags"><span>sEMG</span><span>Biomedical</span><span>Machine learning</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Rebound" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Corneucopia" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/corneucopia.jpg" alt="Corneucopia CAD render" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Corneucopia</h3>
+                        <p class="card-tagline">A Corne-based, 42-key low-profile wireless split keyboard.</p>
+                        <ul class="card-features">
+                            <li>ZMK firmware on two Supermini NRF52840 controllers</li>
+                            <li>Per-key RGB, hotswap sockets, and choc switches</li>
+                            <li>Two Nice!View displays</li>
+                        </ul>
+                        <div class="tags"><span>ZMK</span><span>nRF52840</span><span>Ergogen</span><span>PCB</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Corneucopia" target="_blank" rel="noopener">View on GitHub →</a>
+                        <a class="card-link secondary" href="https://github.com/DynamicWhiteHat/Corneucopia-Firmware" target="_blank" rel="noopener">Firmware</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Orbit" target="_blank" rel="noopener">
+                        <img src="Images/website/orbit.png" alt="Orbit mini drone render" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Orbit</h3>
+                        <p class="card-tagline">An ESP32-powered mini drone that can autonomously follow you.</p>
+                        <ul class="card-features">
+                            <li>DWM1000 modules on the frame and a small beacon for position tracking</li>
+                            <li>Gyro, compass, and pressure sensor for altitude hold</li>
+                            <li>Firmware based on flix, modified for this project</li>
+                        </ul>
+                        <div class="tags"><span>ESP32-S3</span><span>DWM1000</span><span>Drone</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Orbit" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Reverb" target="_blank" rel="noopener">
+                        <img src="Images/website/reverb.png" alt="Reverb record player" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Reverb</h3>
+                        <p class="card-tagline">A custom record player: place a disk and it plays.</p>
+                        <ul class="card-features">
+                            <li>RFID-tagged disks map to songs</li>
+                            <li>Gesture sensor for touch-free volume control</li>
+                            <li>Working stylus and a 3x8 audio visualizer array</li>
+                        </ul>
+                        <div class="tags"><span>ESP32-S3</span><span>RFID</span><span>Audio</span><span>PCB</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Reverb" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Blynk" target="_blank" rel="noopener">
+                        <img src="Images/website/blynk.png" alt="Blynk LED controller board" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Blynk</h3>
+                        <p class="card-tagline">A feature-rich LED controller running WLED, built to be Alexa compatible.</p>
+                        <ul class="card-features">
+                            <li>ESP32 S3 with microphone, line-in, PIR, IR, and ambient light sensors</li>
+                            <li>Full RGBW CCT support</li>
+                            <li>Reverse polarity protection and automatic supply switching</li>
+                        </ul>
+                        <div class="tags"><span>ESP32-S3</span><span>WLED</span><span>PCB</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Blynk" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Arc" target="_blank" rel="noopener">
+                        <img src="Images/website/arc.png" alt="Arc wireless keyboard" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Arc</h3>
+                        <p class="card-tagline">A wireless 75% backlit keyboard with a hidden-screw case.</p>
+                        <ul class="card-features">
+                            <li>HolyIOT 18010 MCU running wireless ZMK firmware</li>
+                            <li>RGB backlight and underglow</li>
+                            <li>Nice!View e-paper display</li>
+                        </ul>
+                        <div class="tags"><span>ZMK</span><span>Wireless</span><span>RGB</span><span>PCB</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Arc" target="_blank" rel="noopener">View on GitHub →</a>
+                        <a class="card-link secondary" href="https://github.com/DynamicWhiteHat/ArcFirmware" target="_blank" rel="noopener">Firmware</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/Ember" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/ember.png" alt="Ember laser cutter CAD" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Ember</h3>
+                        <p class="card-tagline">A custom laser cutter for precise cutting and engraving.</p>
+                        <ul class="card-features">
+                            <li>NEJE E40 10W 24v Diode</li>
+                            <li>Wireless connectivity powered by the MakerBase DLC32 board</li>
+                            <li>360x360mm cutting area</li>
+                        </ul>
+                        <div class="tags"><span>Laser</span><span>Wireless</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/Ember" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/NavIt" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/navit.png" alt="NavIt CAD render" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>NavIt</h3>
+                        <p class="card-tagline">An ESP32-powered bicycle navigation display for your handlebar.</p>
+                        <ul class="card-features">
+                            <li>3.7 inch e-ink touch display that stays readable in sunlight</li>
+                            <li>Neo 6M GPS, microphone for voice commands, and speaker</li>
+                            <li>Runs modified Astro software</li>
+                        </ul>
+                        <div class="tags"><span>ESP32-S3</span><span>E-ink</span><span>GPS</span><span>PCB</span><span>CAD</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/NavIt" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+            </div>
+
+            <h2 class="group-heading">Software</h2>
+            <div class="card-grid">
+
+                <article class="card">
+                    <a class="card-media" href="https://dynamicwhitehat.github.io/Pixel-Predictor/" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/pixel.png" alt="Pixel Predictor image" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Pixel Predictor</h3>
+                        <p class="card-tagline">A fun, easy to play AI-powered pictionary.</p>
+                        <ul class="card-features">
+                            <li>Uses the GROQ API to send your drawings to an AI to guess</li>
+                            <li>Beat your best time, or go hard mode for an extra challenge</li>
+                        </ul>
+                        <div class="tags"><span>JS</span><span>GROQ API</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://dynamicwhitehat.github.io/Pixel-Predictor/" target="_blank" rel="noopener">Try it live →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://pysolar.streamlit.app/" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/pysolar.png" alt="PySolar image" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>PySolar</h3>
+                        <p class="card-tagline">A simple real-time solar system viewer written 100% in Python.</p>
+                        <ul class="card-features">
+                            <li>Uses Skyfield with JPL's DE440s ephemeris (1849 to 2150)</li>
+                            <li>Displays the system in a scrollable matplotlib window</li>
+                        </ul>
+                        <div class="tags"><span>Python</span><span>Skyfield</span><span>matplotlib</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://pysolar.streamlit.app/" target="_blank" rel="noopener">Try it live →</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://www.youtube.com/watch?v=AvPq5rgJDkA" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/styne.png" alt="Astro image" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Astro</h3>
+                        <p class="card-tagline">A voice assistant for Windows with online and local AI features.</p>
+                        <ul class="card-features">
+                            <li>Natural language processing for versatile, responsive voice commands</li>
+                            <li>Currently in V 1.0, under testing</li>
+                        </ul>
+                        <div class="tags"><span>Python</span><span>NLP</span><span>Voice</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://www.youtube.com/watch?v=AvPq5rgJDkA" target="_blank" rel="noopener">Watch the demo →</a>
+                        <a class="card-link secondary" href="https://github.com/DynamicWhiteHat/Astro" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <a class="card-media" href="https://github.com/DynamicWhiteHat/discordStreaks" target="_blank" rel="noopener">
+                        <img class="cover" src="Images/website/discord.png" alt="Discord bot image" loading="lazy">
+                    </a>
+                    <div class="card-body">
+                        <h3>Discord Streaks</h3>
+                        <p class="card-tagline">A Discord bot written in Python for keeping streaks.</p>
+                        <ul class="card-features">
+                            <li>Uses the sqlite3 library to securely store information</li>
+                        </ul>
+                        <div class="tags"><span>Python</span><span>sqlite3</span><span>Discord</span></div>
+                    </div>
+                    <div class="card-footer">
+                        <a class="card-link" href="https://github.com/DynamicWhiteHat/discordStreaks" target="_blank" rel="noopener">View on GitHub →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
